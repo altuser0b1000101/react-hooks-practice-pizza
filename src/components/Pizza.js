@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-function Pizza() {
+function Pizza({ zaList }) {
   return (
     <tr>
-      <td>{"Replace Me With Pizza Topping"}</td>
-      <td>{"Replace Me With Pizza Size"}</td>
-      <td>{"Replace Me With Vegatarian"}</td>
+      <td>{zaList.topping}</td>
+      <td>{zaList.size}</td>
+      <td>{zaList.vegetarian ? 'yes' : 'no'}</td>
       <td>
-        <button type="button" className="btn btn-primary">
-          Edit Pizza
+        <button type='button' className='btn btn-primary'>
+          // onclick id Edit Pizza
         </button>
       </td>
     </tr>
